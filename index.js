@@ -24,6 +24,20 @@ searchForm.addEventListener("submit", (e) => {
         searchResults.innerHTML = output;
     });
   })
+// Get the select filter element
+const filter = document.getElementById("filter");
+
+// Set the select filter to display: none by default
+filter.style.display = "none";
+
+// Get the search button
+const searchButton = document.querySelector("button[type='submit']");
+
+// Add an event listener to the search button
+searchButton.addEventListener("click", () => {
+  // Show the select filter
+  filter.style.display = "block";
+});
 
   function filterMovies(event) {
     let filter = event.target.value;
