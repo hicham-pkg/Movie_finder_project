@@ -13,7 +13,7 @@ fetch(`https://www.omdbapi.com/?i=${movieId}&apikey=7566c271`)
       <p>Genre: ${movie.Genre}</p>
       <p>Director: ${movie.Director}</p>
       <p>Actors: ${movie.Actors}</p>
-      <p>Plot: ${movie.Plot}</p>
+      <p class= "plot">Plot: ${movie.Plot}</p>
     `;
     movieDetails.innerHTML = output;
   });
